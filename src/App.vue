@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 </script>
 
 <template>
   <div>
+    <div class="text-xl">Vinnie's fancy</div>
+    <div class="text-6xl anim-logo-gradient">FIZZBUZZER</div>
     <Button>This is a button</Button>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <Input placeholder="This is an input" />
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
