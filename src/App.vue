@@ -8,6 +8,12 @@ import { Input } from "@/components/ui/input";
   <div>
     <div class="text-xl">Vinnie's fancy</div>
     <div class="text-6xl anim-logo-gradient">FIZZBUZZER</div>
+    <div class="text-xl">
+      Input a number.
+      <div>If the number is a multiple of 3, you will get a <span class="anim-logo-gradient">FIZZ!</span></div>
+      <div>If the number is a multiple of 5, you will get a <span class="anim-logo-gradient">BUZZ!</span></div>
+      <div>If the number is a multiple of 15, you will get a <span class="anim-logo-gradient">FIZZBUZZ!!</span></div>
+    </div>
     <Button>This is a button</Button>
     <Input placeholder="This is an input" />
   </div>
