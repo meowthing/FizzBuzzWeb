@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import FizzBuzzer from "./components/FizzBuzzer.vue";
 </script>
 
 <template>
-  <div class="background px-10 flex gap-10">
-    <div class="left-side content-center ">
+  <div class="background px-10 flex flex-wrap content-center gap-10">
+    <div>
       <div class="text-xl">Vinnie's fancy</div>
-      <div class="text-8xl anim-logo-gradient">FIZZBUZZER!</div>
+      <div
+        class="text-5xl md:text-8xl transition-all duration-[250ms] ease-out anim-logo-gradient"
+      >
+        FIZZBUZZER!
+      </div>
       <div class="text-xl mt-10">
         Input a number.
         <div>
@@ -25,10 +28,8 @@ import { Input } from "@/components/ui/input";
         </div>
       </div>
     </div>
-    <div class="right-side content-center">
-      <Input placeholder="Input a number" />
-      <Button>Check!</Button>
-      
+    <div class="grow content-center">
+      <FizzBuzzer />
     </div>
   </div>
 </template>

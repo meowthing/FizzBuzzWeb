@@ -28,6 +28,10 @@
   text-shadow: 0px 4px 2px rgba(0,0,0,0.2);
 }
 
+.anim-turbo {
+  animation-duration: 1s;
+}
+
 .text-center {
   text-align: center; /* Center the text */
   margin: 0; /* Remove default margins */
