@@ -6,6 +6,8 @@ module.exports = {
   safelist: ["dark"],
   prefix: "",
 
+  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  
   content: [
     "./pages/**/*.{ts,tsx,vue}",
     "./components/**/*.{ts,tsx,vue}",
@@ -26,6 +28,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "vue-green": "#326E5D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

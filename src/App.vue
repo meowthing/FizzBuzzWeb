@@ -5,19 +5,32 @@ import { Input } from "@/components/ui/input";
 </script>
 
 <template>
-  <div>
-    <div class="text-xl">Vinnie's fancy</div>
-    <div class="text-6xl anim-logo-gradient">FIZZBUZZER</div>
-    <div class="text-xl">
-      Input a number.
-      <div>If the number is a multiple of 3, you will get a <span class="anim-logo-gradient">FIZZ!</span></div>
-      <div>If the number is a multiple of 5, you will get a <span class="anim-logo-gradient">BUZZ!</span></div>
-      <div>If the number is a multiple of 15, you will get a <span class="anim-logo-gradient">FIZZBUZZ!!</span></div>
+  <div class="background px-10 flex gap-10">
+    <div class="left-side content-center ">
+      <div class="text-xl">Vinnie's fancy</div>
+      <div class="text-8xl anim-logo-gradient">FIZZBUZZER!</div>
+      <div class="text-xl mt-10">
+        Input a number.
+        <div>
+          If the number is a multiple of 3, you will get a
+          <span class="anim-logo-gradient">FIZZ!</span>
+        </div>
+        <div>
+          If the number is a multiple of 5, you will get a
+          <span class="anim-logo-gradient">BUZZ!</span>
+        </div>
+        <div>
+          If the number is a multiple of 15, you will get a
+          <span class="anim-logo-gradient">FIZZBUZZ!!</span>
+        </div>
+      </div>
     </div>
-    <Button>This is a button</Button>
-    <Input placeholder="This is an input" />
+    <div class="right-side content-center">
+      <Input placeholder="Input a number" />
+      <Button>Check!</Button>
+      
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>

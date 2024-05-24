@@ -1,3 +1,7 @@
+:root {
+  --vue-green: #326e5d;
+}
+
 .anim-logo-gradient {
   background: repeating-linear-gradient(
     90deg,
@@ -19,8 +23,9 @@
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 5s linear infinite forwards;
-  -webkit-text-stroke: 1px black;
+  animation: gradientAnimation 7s linear infinite forwards;
+  /* -webkit-text-stroke: 1px black; */
+  text-shadow: 0px 4px 2px rgba(0,0,0,0.2);
 }
 
 .text-center {
@@ -39,4 +44,30 @@
   100% {
     background-position: -33% 50%;
   }
+}
+
+.background {
+  min-height: 100vh;
+  background-color: #dbffdf;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #dbffdf 10px
+    ),
+    repeating-linear-gradient(#4fdd8155, #4fdd81);
+}
+
+.background2 {
+  background: linear-gradient(
+    65deg,
+    rgb(7, 26, 82) 3%,
+    rgb(7, 26, 82) 40%,
+    rgb(8, 105, 114) calc(40% + 1px),
+    rgb(8, 105, 114) 60%,
+    rgb(23, 185, 120) calc(60% + 1px),
+    rgb(23, 185, 120) 68%,
+    rgb(167, 255, 131) calc(68% + 1px),
+    rgb(167, 255, 131) 100%
+  );
 }
