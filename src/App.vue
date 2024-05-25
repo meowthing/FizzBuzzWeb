@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
 import FizzBuzzer from "./components/FizzBuzzer.vue";
 </script>
 
@@ -8,7 +7,7 @@ import FizzBuzzer from "./components/FizzBuzzer.vue";
     <div>
       <div class="text-xl">Vinnie's fancy</div>
       <div
-        class="text-5xl md:text-8xl transition-all duration-[250ms] ease-out anim-logo-gradient"
+        class="text-5xl md:text-8xl transition-all transition-duration-[250ms] ease-out anim-logo-gradient"
       >
         FIZZBUZZER!
       </div>

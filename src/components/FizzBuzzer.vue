@@ -13,11 +13,14 @@ const outputHtml = ref("");
 const fbCheck = () => {
   let stringBuilder = "";
 
-  if (inputNum.value % 3 == 0) {
-    stringBuilder += "FIZZ";
-  }
-  if (inputNum.value % 5 == 0) {
-    stringBuilder += "BUZZ";
+  const number = Number(inputNum.value);
+  if (!Number.isNaN(number)) {
+    if (number % 3 == 0) {
+      stringBuilder += "FIZZ";
+    }
+    if (number % 5 == 0) {
+      stringBuilder += "BUZZ";
+    }
   }
 
   if (stringBuilder.length > 0) {
