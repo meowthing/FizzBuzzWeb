@@ -30,7 +30,7 @@ import FizzBuzzer from "./components/FizzBuzzer.vue";
     <div class="grow content-center">
       <FizzBuzzer />
     </div>
-    <div class="center text-xs self-end w-full">
+    <div class="text-center text-xs w-full">
       ©️Vincent Leung {{ new Date().getFullYear() }}
       <br/><a class="anim-logo-gradient" href="https://github.com/meowthing/FizzBuzzWeb">GitHub</a>
     </div>
